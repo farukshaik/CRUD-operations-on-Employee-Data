@@ -1,0 +1,78 @@
+<html>
+    <body>
+
+
+<form class="row g-3" #addEmployeeForm = "ngForm" (ngSubmit) = onAddEmployee() >
+    
+      <div class="col">
+         <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" [(ngModel)]="addEmployeeData.firstName">
+      </div>
+
+      <div class="col">
+        
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" [(ngModel)]="addEmployeeData.lastName">
+      </div>
+    
+        <div class="col-12">
+                  <input type="text" class="form-control" id="employmentId" placeholder="Employment Id" name="employmentId" [(ngModel)]="addEmployeeData.employmentId">
+        </div>
+
+        
+        <div class="col-md-6">
+        
+          <input type="text" class="form-control" id="designation" placeholder="Designation" name="designation" [(ngModel)]="addEmployeeData.designation">
+        </div>
+    
+  
+    
+        <div class="col-md-6">
+                  <input type="text" class="form-control" id="department" placeholder="Department" name="Department" [(ngModel)]="addEmployeeData.department">
+        </div>
+        <div class="col-md-6">
+        
+          <input type="text" class="form-control" id="status" placeholder="Status" name="status" [(ngModel)]="addEmployeeData.status">
+        </div>
+        
+
+        <div class="col-6">
+                  <input type="text" class="form-control" id="reportingManager" placeholder="Reporting Manager" name="reportingManager" [(ngModel)]="addEmployeeData.reportingManager">
+        </div>
+        <div class="col-md-6">
+        
+          <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender" [(ngModel)]="addEmployeeData.gender">
+        </div>
+      
+        <div class="col-6">
+                  <input type="text" class="form-control" id="bloodGroup" placeholder="Blood Group" name="bloodGroup" [(ngModel)]="addEmployeeData.bloodGroup">
+        </div>
+        <div class="form-group col-md-6">
+        
+          <input type="text" class="form-control" id="address" placeholder="Address" name="address" [(ngModel)]="addEmployeeData.address">
+        </div>
+      
+
+        <div class="form-group col-md-6">
+                  <input type="date" class="form-control" id="startDate"  name="startDate" [(ngModel)]="addEmployeeData.startDate">
+        </div>
+        <div class="form-group col-md-6">
+        
+          <input type="date" class="form-control" id="endDate" placeholder="DOB"  name="endDate" [(ngModel)]="addEmployeeData.endDate">
+        </div>
+
+        <div class="form-group col-md-6">
+        
+            <input type="date" class="form-control" id="dob"  name="dob" [(ngModel)]="addEmployeeData.dob">
+          
+      </div>
+
+
+
+
+</form>
+    <button type="submit" class="btn btn-primary">Add Employee</button>
+
+
+
+
+</body>
+</html>

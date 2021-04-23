@@ -1,0 +1,42 @@
+<html>
+    <body>
+
+
+<form #addDependantForm = "ngForm" (ngSubmit) = onAddDependant() class="row g-3">
+    
+      <div class="col-6">
+         <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" [(ngModel)]="addDependantData.firstName">
+      </div>
+
+      <div class="col-6">
+        
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" [(ngModel)]="addDependantData.lastName">
+      </div>
+    
+      <div class="col-6">  
+      <input type="text" class="form-control" id="gender" placeholder="Gender" name="gender" [(ngModel)]="addDependantData.gender">
+        </div>
+      
+        <div class="col-6">  
+            <input type="text" class="form-control" id="relationship" placeholder="Relationship" name="relationship" [(ngModel)]="addDependantData.relationship">
+              </div>
+
+              <div class="col">  
+                <input type="text" class="form-control" id="id" placeholder="Employee id" name="id" [(ngModel)]="addDependantData.id">
+                  </div>      
+        
+
+        <div class="form-group col-md-6">
+        
+            <input type="date" class="form-control" id="dob"  name="dob" [(ngModel)]="addDependantData.dob">
+          
+      </div>
+
+
+
+
+</form>
+    <button type="submit" class="btn btn-primary">Add Dependant</button>
+
+</body>
+</html>
